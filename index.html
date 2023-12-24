@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="signBox">
+            <form action="https://httpbin.org/get" method="get">
+                <div class="signHeader">
+                    <span>Sign Up</span>
+                </div>
+                
+                <div class="inputBox">                       
+                    <input type="text" name="Name" id="Name" class="inputField"  autocomplete="on" required autofocus>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <label for="Name">Name</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputField" required>
+                    <label for="email">Email</label>
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                
+                <div class="inputBox">                 
+                    <input type="password" name="password" id="password" class="inputField" required>
+                    <label for="password">Password</label> 
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+
+                <div class="rem-for">
+                    <input type="checkbox" name="remember" id="remember"> 
+                    <label for="remember">Remember me?</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" class="inputSubmit" value="Sign Up">
+                </div>    
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
